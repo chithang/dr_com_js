@@ -1,0 +1,12 @@
+{{~it :row:idx}}
+<tr>
+    <td>{{=row.firstname}}</td>
+    <td>{{=row.lastname}}</td>
+    <td>{{=2012-new Date(row.birthday).getFullYear()}}</td>
+    <td>{{=row.address}}</td>
+    <td>{{=row.zip}}</td>
+    <td>{{=row.phone}}</td>
+    <td><a href='#' class='edit-customer' data-id='{{=row._id}}'>Edit</a></td>
+    <td><a href='#' class='remove-customer' data-id='{{=row._id}}'>Remove</a></td>
+</tr>
+{{~}}

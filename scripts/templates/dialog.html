@@ -1,0 +1,49 @@
+<form class='form-horizontal' id='customer-form'>
+	<fieldset>
+		<div class='control-group'>
+			<label class='control-label' for='firstname'>First Name:</label>
+			<div class='controls'>
+				<input type='text' class='input-xlarge' id='firstname'
+					name='firstname' value='{{=it.get('firstname')}}'>
+			</div>
+		</div>
+		<div class='control-group'>
+			<label class='control-label' for='lastname'>Last Name:</label>
+			<div class='controls'>
+				<input type='text' class='input-xlarge' id='lastname'
+					name='lastname' value='{{=it.get('lastname')}}'>
+			</div>
+		</div>
+		<div class='control-group'>
+			<label class='control-label' for='city'>Birthday:</label>
+			<div class='controls'>
+				<input type='text' class='input-xlarge span2' id='birthday'
+					name='city' value='{{=it.get('birthday')}}'>
+			</div>
+		</div>
+		<div class='control-group'>
+			<label class='control-label' for='address'>Address:</label>
+			<div class='controls'>
+				<input type='text' class='input-xlarge' id='address' name='address'
+					value='{{=it.get('address')}}'>
+			</div>
+		</div>
+		<input type='hidden' id='_id' name='_id' value='{{=it.id}}'>
+		
+
+		<div class='control-group'>
+			<label class='control-label' for='state'>Zip Code:</label>
+			<div class='controls'>
+				<input type='text' class='input-xlarge span1' id='zip' name='zip'
+					value='{{=it.get('zip')}}'>
+			</div>
+		</div>
+		<div class='control-group'>
+			<label class='control-label' for='phone'>Phone Number:</label>
+			<div class='controls'>
+				<input type='text' class='input-xlarge' id='phone'
+					name='phone' value='{{=it.get('phone')}}'>
+			</div>
+		</div>
+	</fieldset>
+</form>
